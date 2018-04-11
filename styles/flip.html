@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Hummel's Services</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #E3E3E3;
+            font-family: sans-serif;
+        }
+
+        /* .card-links {
+            color: #E3E3E3;
+            text-decoration: none;
+        }
+
+        .card-links:hover,
+        .card-links:active {
+            color: #346083;
+            background: #E3E3E3;
+            border-radius: 5px;
+            box-shadow: 5px 5px 3px gray;
+        } */
+
+        /* entire container, keeps perspective */
+
+
+        @media (min-width: 48em) {
+            .flip-container {
+                perspective: 1000px;
+                padding: 1em;
+            }
+                /* flip the pane when hovered */
+                .flip-container:hover .flipper, .flip-container.hover .flipper {
+                    transform: rotateY(180deg);
+                }
+
+            .flip-container, .front, .back {
+                width: 100%;
+            }
+
+            /* flip speed goes here */
+            .flipper {
+                transition: 0.6s;
+                transform-style: preserve-3d;
+
+                position: relative;
+            }
+
+            /* hide back of pane during swap */
+            .front, .back {
+                backface-visibility: hidden;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            /* front pane, placed above back */
+            .front {
+                z-index: 2;
+                /* for firefox 31 */
+                transform: rotateY(0deg);
+            }
+
+            /* back, initially hidden pane */
+            .back {
+                transform: rotateY(180deg);
+            }
+
+            .service-container {
+                width: 100%;
+            }
+
+            .service-container img {
+                width: 100%;
+            } 
+
+            .service-container .service-item {
+                display: flex;
+                justify-content: center;
+                margin: 2em;
+            }
+
+            .service-container .service-item .front {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="service-container">
+        <div class="services-row">
+            <div class="service-item">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="#">
+                                <img src="https://source.unsplash.com/random"> 
+                            </a>
+                            <div>Air Conditioning Repair</div>
+                        </div>
+                        <div class="back">
+                            Air conditioning should be check at least twice a year. When we check it we are looking for performance, we make sure it isn’t leaking and that the refrigerant and oil located in the system is full. It’s recommended that the system should be flushed every other year. With Air Conditioning preventive work is highly recommended because a failure is the third most expensive cost of repairs on a car.
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="#">
+                                <img src="https://source.unsplash.com/random"> 
+                            </a>
+                            <div>Air Conditioning Repair</div>
+                        </div>
+                        <div class="back">
+                            Air conditioning should be check at least twice a year. When we check it we are looking for performance, we make sure it isn’t leaking and that the refrigerant and oil located in the system is full. It’s recommended that the system should be flushed every other year. With Air Conditioning preventive work is highly recommended because a failure is the third most expensive cost of repairs on a car.
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="#">
+                                <img src="https://source.unsplash.com/random"> 
+                            </a>
+                            <div>Air Conditioning Repair</div>
+                        </div>
+                        <div class="back">
+                            Air conditioning should be check at least twice a year. When we check it we are looking for performance, we make sure it isn’t leaking and that the refrigerant and oil located in the system is full. It’s recommended that the system should be flushed every other year. With Air Conditioning preventive work is highly recommended because a failure is the third most expensive cost of repairs on a car.
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="services-row">
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Brake Repair</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Check Engine Light</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Emissions</a>
+            </div>
+        </div>
+
+        <div class="services-row">
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Engine Repair</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Oil Change</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Timing Belt Replacement</a>
+            </div>
+        </div>
+
+        <div class="services-row">
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Transmission Repair</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Tune Up Service</a>
+            </div>
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Suspension Servicing</a>
+            </div>
+        </div>
+
+        <div class="services-row">
+            <div class="service-item">
+                <a class="card-links" href="#"><img src="https://source.unsplash.com/random" alt="" class="photo">
+                Wheel Alignment</a>
+            </div>
+            <div class="service-item"></div>
+            <div class="service-item"></div>
+        </div> -->
+
+    </div>
+</body>
+
+<!-- <header>
+    <div class="nav">
+        <a href="#" class="toggle" id="nav-hamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="identifyer">Hummel's Auto Repair</a>
+        <div class="nav-left">
+            <a href="services.html">Services</a>
+            <a href="#">Location</a>
+            <a href="#">Schedule Appointment</a>
+            <a href="#">Coupons</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</header> -->
+
+</html>
